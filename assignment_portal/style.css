@@ -1,0 +1,15 @@
+h1 {
+    background-color:plum;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px;
+    grid-gap: 5px;
+    width: 360px;
+}
+
+.personal_img {
+    grid-column: 4 / 5;
+}
