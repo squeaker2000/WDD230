@@ -1,0 +1,7 @@
+body {
+  background-color: darksalmon;
+}
+
+li:nth-child(2n) {
+  color: rebeccapurple;
+}
