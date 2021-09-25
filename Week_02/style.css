@@ -1,1 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body {
+    font-family: Amatic SC;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 375px);
+    grid-template-rows: repeat(5, 140px);
+    column-gap: 50px;
+    padding: 50px;
+}
+
+.card-1, .card-2, .card-3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 375px;
+    text-align: center;
+    font-family: arial;
+    grid-row: 1/6;
+}
