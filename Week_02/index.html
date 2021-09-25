@@ -5,28 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body onload="last_updated()">
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Menu
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://squeaker2000.github.io/WDD230/assignment_portal/">Home</a>
+            <a href="https://byui.instructure.com/courses/155386/assignments/6525539?module_item_id=17680648">Assignment 02</a>
+            <a href="https://byui.instructure.com/courses/155386/assignments/6525541?module_item_id=17680670">Assignment 03</a>
+          </div>
+        </div>
+      </div>
+
     <div class="grid">
     <div class="card-1">
-        <!--Insert image here-->
-        <h1>Text here</h1>
-        <p>text here</p>
+        <h1>White Space</h1>
+        <h3>By: UX Engineer</h3>
+        <img src="./images/white_space.png" alt="white space">
+        <p>UX Engineer teaches us about the importance of white space.  White spacce
+            is the blank space around the elements in a design.  These points are covered:<br>
+        </p>
+        <ol>
+            <li>Improves focus</li>
+            <li>Improves comprehension</li>
+            <li>Helps create balance</li>
+            <li>Communicates distinction</li>
+            <li>Communicates relationships</li>
+            <li>Helps to establish visual hierarchy</li>
+            <li>Promotes rhythm in your design</li>
+        </ol>
+        <a href="https://uxengineer.com/principles-of-design/white-space/" target="_blank">read more</a>
     </div>
 
     <div class="card-2">
-        <!--Insert image here-->
-        <h1>Text here</h1>
-        <p>text here</p>
+        <h1>Contrast</h1>
+        <h3>By: Emily Goorevich</h3>
+        <img src="./images/contrast.png" alt="">
+        <p>Contrast in important because it's what makes your design pop.  This makes your design more
+            appealing to viewers.<br><br>
+            Just like photography where the photographer tries to stage the scene
+            so the main focus of the picture can be more noticable, a web designer will use contrast to
+            stage the deign so the viewer can easily determine what the main focus of the site is.
+        </p>
+        <a href="https://learn.g2.com/principles-of-design" target="_blank">read more</a>
     </div>
 
     <div class="card-3">
-        <!--Insert image here-->
-        <h1>Text here</h1>
-        <p>text here</p>
+        <h1>Alignment</h1>
+        <h3>By: UX Engineer</h3>
+        <img src="./images/alignment.png" alt="alignment">
+        <p>Alignment is crucial when developing a website.  Alignment is how every on your page is going
+            to line up.  You want your paged aligned correctly so it'll be more appealing to the viewers
+            eyes.<br><br>
+            UX Engineer teaches us all about the importantce of good alignment.  UX Engineer also
+            teaches us about all the different types of alignment and when to use them.
+        </p>
+        <a href="https://uxengineer.com/principles-of-design/alignment/" target="_blank">read more</a>
     </div>
     </div>
+
+    <footer>
+        <p class="copyright">&copy; 2020 | Elizabeth L.R. Orchard | Illinois | <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="date"></p>
+    </footer>
 </body>
 </html>
