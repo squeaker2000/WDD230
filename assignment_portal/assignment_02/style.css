@@ -81,6 +81,11 @@ body {
     font-family: arial;
     grid-row: 1/7;
     background-color: #DDA0DD;
+    transition: all .2s ease-in-out;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover {
+    transform: scale(1.1);
 }
 
 h1, h3, p, a {
