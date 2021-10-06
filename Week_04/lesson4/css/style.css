@@ -1,0 +1,26 @@
+body {
+  background-color: #bdd4e7;
+}
+
+img {
+  width: 80px;
+}
+
+nav {
+  background-color: #38618c;
+}
+
+nav li {
+  float: left;
+  display: inline;
+}
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
