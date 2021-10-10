@@ -5,24 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Preston Page</title>
 </head>
 
 <body>
-    <header class="top-header">Weather Today
-        <img src="./images/weather_logo.png" alt="weather logo">
+    <header>
+        <p class="top-header">Weather Today</p><br>
+        <p class="catch-phrase">Sunshine and Rain</p>
+        <img class="logo" src="./images/weather_logo.png" alt="weather logo">
     </header>
     
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">Preston</a></li>
+            <li><a href="#" class="nav-links">Soda Springs</a></li>
+            <li><a href="#" class="nav-links">Fish Haven</a></li>
+            <li><a href="#" class="nav-links">Storm Center</a></li>
+            <li><a href="#" class="nav-links">Gallery</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
         </ul>
     </nav>
 
+    <main>
+        <div class="container">Hero image & weather summmary</div>
+        <div class="container">Forecast</div>
+        <div class="container">Article</div>
+        <div class="container">Location map & social media</div>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2020 | Elizabeth L.R. Orchard | Illinois | <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="date"></p>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
