@@ -31,17 +31,76 @@
     </nav>
 
     <main>
-        <div class="container">
-            <img class="hero" src="./images/hero.jpg" alt="hero image">
+        <div class="container" id="summary">
             <div class="weather-summary">
-                
+                <h1>Weather Summary</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ipsum nunc aliquet 
+                    bibendum enim.<br>
+                </p>
+            </div>
+            <img class="hero" src="./images/hero.jpg" alt="hero image">
+            <div class="weather-summary-media">
+                <h1>Weather Summary</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ipsum nunc aliquet 
+                    bibendum enim.<br>
+                </p>
             </div>
         </div>
-        <div class="container">Forecast</div>
-        <div class="container">Article</div>
+
         <div class="container">
+            <table id="forecast">
+                <tr id="days">
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr id="weather-images">                
+                    <td><img src="./images/weather-image.png" alt="weather image"></td>
+                    <td><img src="./images/weather-image.png" alt="weather image"></td>
+                    <td><img src="./images/weather-image.png" alt="weather image"></td>
+                    <td><img src="./images/weather-image.png" alt="weather image"></td>
+                    <td><img src="./images/weather-image.png" alt="weather image"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container" id="article">
+            <img src="./images/article_image.jpg" alt="Preston Idaho in snow">
+            <h2>Article</h2>
+            <p>An incoming blast of winter in October has prompted the National Weather 
+                Service to issue a winter storm warning and winter weather advisories for 
+                most of East Idaho.<br><br>
+
+                The storm barreling through from Canada is forecast to begin dumping snow 
+                early Monday morning on East Idaho, with the first flakes falling on the 
+                Island Park, Spencer, Dubois and Kilgore areas, where the winter storm 
+                warning is in effect. By Monday evening, snow could be falling on the 
+                entire region.<br><br>
+                
+                Winter weather advisories have been issued for most of East Idaho, including 
+                the Pocatello, Chubbuck, Blackfoot, Idaho Falls, Ammon and Rexburg areas.<br><br>
+
+                The storm is forecast to bring snow as well as rain to East Idaho through 
+                Tuesday morning, though the precipitation might linger for longer in some places, 
+                the weather service said.<br><br>
+            </p>
+            <a href="https://www.idahostatejournal.com/freeaccess/storm-forecast-to-bring-snow-to-east-idaho-starting-late-sunday-night/article_8954dc32-43fc-51e5-9bf0-e056e33b0f92.html" target="_blank">Read More</a>
+        </div>
+        <div class="container" id="map-social">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46015.890626730514!2d-111.90991237957827!3d42.10177115587994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634354259219!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46015.890626730514!2d-111.90991237957827!3d42.10177115587994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634354259219!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/TheWeatherChannel" target="_blank"><img id="facebook" src="./images/facebook.png" alt="facebook icon"></a></li>
+                    <li><a href="https://www.instagram.com/weatherchannel/" target="_blank"><img id="instagram" src="./images/instagram.png" alt="instagram icon"></a></li>
+                    <li><a href="https://www.youtube.com/user/TheWeatherChannel" target="_blank"><img id="youtube" src="./images/youtube.png" alt="youtube icon"></a></li>
+                </ul>
             </div>
         </div>
     </main>
