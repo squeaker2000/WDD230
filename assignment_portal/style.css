@@ -51,3 +51,11 @@ footer {
     width: 99.2%;
     border-radius: 0.5em;
 }
+
+WebFont.load({
+  google: {
+    families: [
+       'lucidasans'
+    ]
+  }
+});
