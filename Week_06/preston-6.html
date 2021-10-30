@@ -7,7 +7,8 @@
     <meta name="description" content="Preston weather page">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Preston Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Preston Page</title>
 </head>
 
 <body>
@@ -39,7 +40,11 @@
                     bibendum enim.<br>
                 </p>
             </div>
-            <img class="hero" src="./images/hero.jpg" alt="hero image">
+            <picture>
+                <source media="(max-width: 580px)" srcset="./images/hero_new_small.jpg">
+                <source media="(max-width: 1000px)" srcset="./images/hero_new_medium.jpg">
+                <img src="./images/hero_new_large.jpg" alt="hero">
+            </picture>
             <div class="weather-summary-media">
                 <h1>Weather Summary</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
