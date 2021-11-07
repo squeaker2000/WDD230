@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+  background-color: #bdd4e7;
+  font-family: 'Nunito', sans-serif;
+}
+
+.logo {
+  width: auto;
+  height: 7em;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+
+header {
+  background-color: #885053;
+  color: white;
+  display: flex;
+  height: 10em;
+}
+
+.top-header {
+  font-size: 3em;
+  margin-top: auto;
+  margin-right: 15px;;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.catch-phrase {
+  font-size: 2em;
+  font-style: italic;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 58px;
+}
+
+nav {
+  background-color: #38618C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .logo-2 {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.images {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    background-color: #885053;
+    font-size: 150%;
+    text-align: center;
+    margin-top: -4px;
+}
+
+footer a {
+    color: white;
+}
+  
+footer {
+    display: flex;
+    background-color: #38618C;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 850px) {
+    .top-header {
+      font-size: 2em;
+      margin-top: auto;
+      margin-right: 15px;;
+      margin-bottom: auto;
+      margin-left: 20px;
+    }
+  
+    .catch-phrase {
+      font-size: 1em;
+      font-style: italic;
+      margin-top: auto;
+      margin-right: auto;
+      margin-bottom: 58px;
+    }
+  
+    img {
+      width: auto;
+      height: 5em;
+    }
+  
+    nav .mainMenu {
+      height: 90vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #38618C;
+      transition: top 1s ease;
+      display: none;
+    }
+  
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  
+    nav .openMenu {
+      display: block;
+    }  
+}
+
+@media (min-width: 980px) {
+    .images img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .images {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    figcaption {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .images {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    figcaption {
+        display: none;
+    }
+}
