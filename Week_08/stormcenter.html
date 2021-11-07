@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p class="top-header">Weather Today</p><br>
+        <p class="catch-phrase">Sunshine and Rain</p>
+        <img class="logo" src="./images/weather_logo.png" alt="weather logo">
+    </header>
+    
+    <nav>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">Preston</a></li>
+            <li><a href="#" class="nav-links">Soda Springs</a></li>
+            <li><a href="#" class="nav-links">Fish Haven</a></li>
+            <li><a href="#" class="nav-links">Storm Center</a></li>
+            <li><a href="#" class="nav-links">Gallery</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <form>
+                <fieldset class="contact_information">
+                    <h1 id="contact_label">Contact Information</h1>
+
+                    <label for="full_name">Full Name</label><br>
+                    <input type="text" minlength="5" id="full_name" name="full_name" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="name@gmail.com"><br>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    <label for="zip">Zip Code</label><br>
+                    <input type="number" id="zip" name="zip_code" required><br>
+                </fieldset>
+
+                <div class="storm_information">
+                    <fieldset class="storm_information">
+                        <h1 id="storm_information_label">Storm Information</h1>
+
+                        <label for="date">Storm Date</label><br>
+                        <input type="date" id="date" name="storm_date"><br>
+                        <label for="storm_type">Storm Type</label><br>
+                        <input list="storm_type" name="storm_type">
+                        <datalist id="storm_type">
+                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option>
+                        </datalist><br>
+                
+                        <label for="storm_severity">Storm Severity</label><br>
+                        <div class="storm_severity">
+                            <label class="flex" for="rating">Rating:<input type="range" id="rating"
+                            value="5" min="1" max="10" list="tickmarks" oninput="adjustRating(this.value)"
+                            onchange="adjustRating(this.value)"><span id="ratingvalue">10</span></label>
+                            <datalist id="tickmarks">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                        </div><br>
+
+                        <label for="storm_region">Storm Region</label><br>
+                        <div class="storm_region">
+                            <select name="region">
+                                <option>Select Region...</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </div><br>
+
+                        <label for="danger_level">User In-Danger Level</label>
+                        <div id="danger_level">
+                            <input type="radio" id="yes" name="danger_level" value="yes">
+                            <label for="yes">yes </label>
+                            <input type="radio" id="maybe" name="danger_level" value="maybe">
+                            <label for="no">maybe </label>
+                            <input type="radio" id="no" name="danger_level" value="no">
+                            <label for="no">no </label>
+                        </div><br>
+
+                        <label for="comments">Additional Information or Comments</label><br>
+                        <textarea name="comments" rows="10" cols="30" placeholder="Enter any additional information or comments here"></textarea><br>
+
+                        <button type="submit"><a href="thanks.html"></a>Submit</button>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
