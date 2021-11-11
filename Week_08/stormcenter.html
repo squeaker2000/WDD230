@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -66,7 +67,7 @@
                         <div class="storm_severity">
                             <label class="flex" for="rating">Rating:<input type="range" id="rating"
                             value="5" min="1" max="10" list="tickmarks" oninput="adjustRating(this.value)"
-                            onchange="adjustRating(this.value)"><span id="ratingvalue">10</span></label>
+                            onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
                             <datalist id="tickmarks">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -105,12 +106,15 @@
                         <label for="comments">Additional Information or Comments</label><br>
                         <textarea name="comments" rows="10" cols="30" placeholder="Enter any additional information or comments here"></textarea><br>
 
-                        <button type="submit" onclick="thankYouPage()">Submit</button>
+                        <!-- <form action="https://squeaker2000.github.io/WDD230/Week_08/thanks.html">
+                            <input type="submit">
+                        </form> -->
+
+                        <input type="submit" onClick="location.href='https://squeaker2000.github.io/WDD230/Week_08/thanks.html'" value="submit">
                     </fieldset>
                 </div>
             </form>
         </div>
     </main>
-    <script src="./js/script.js"></script>
 </body>
 </html>
