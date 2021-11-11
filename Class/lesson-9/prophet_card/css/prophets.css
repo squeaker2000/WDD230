@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+p {
+    text-align: center;
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #404E4D;
+    font-family: 'Josefin Sans';
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #404E4D;
+    font-family: 'Josefin Sans';
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    background-image:url("https://t4.ftcdn.net/jpg/03/35/62/03/240_F_335620385_Ht9kqejPeG7SC83kxUyZ20sNLMFqAbrI.jpg");
+}
+
+.cards section{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #F1F0EA;
+    overflow: hidden;
+}
+
+.cards section img{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+@media screen and (min-width: 32.5em) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    .cards {
+        width: 1800px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+    }
+
+    .cards section {
+        max-width: 320px;
+    }
+
+    img {
+        display: flex;
+        max-width: 200px;
+        
+    }
+}

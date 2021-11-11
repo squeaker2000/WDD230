@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://squeaker2000.github.io/WDD230/presentation/form_data.html" method="POST">
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="fname"><br>
+        <p>Choose your favorite ice cream:</p>
+        <input type="radio" id="chocolate" name="ice_cream" value="chocolate">
+        <label for="chocolate">Chocolate</label><br>
+        <input type="radio" id="vanilla" name="ice_cream" value="vanilla">
+        <label for="vanilla">Vanilla</label><br>
+
+        <p>Please select hiw many stated you've been to: </p>
+        <input type="checkbox" id="Illinois" name="states" value="Illinois">
+        <label for="Illinois">Illinois</label><br>
+        <input type="checkbox" id="Idaho" name="states" value="Idaho">
+        <label for="Idaho">Idaho</label><br>
+        <input type="checkbox" id="New_York" name="states" value="New York">
+        <label for="New_York">New York</label><br>
+        <input type="checkbox" id="California" name="states" value="California">
+        <label for="California">California</label><br>
+
+        <input type="submit" value="Submit" onClick="display();">
+    </form>
+</body>
+</html>
