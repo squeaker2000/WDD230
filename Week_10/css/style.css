@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+  background-color: #bdd4e7;
+  font-family: 'Nunito', sans-serif;
+}
+
+img {
+  width: auto;
+  height: 7em;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+
+header {
+  background-color: #885053;
+  color: white;
+  display: flex;
+  height: 10em;
+}
+
+.top-header {
+  font-size: 3em;
+  margin-top: auto;
+  margin-right: 15px;;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.catch-phrase {
+  font-size: 2em;
+  font-style: italic;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 58px;
+}
+
+nav {
+  background-color: #38618C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .logo-2 {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .top-header {
+    font-size: 2em;
+    margin-top: auto;
+    margin-right: 15px;;
+    margin-bottom: auto;
+    margin-left: 20px;
+  }
+
+  .catch-phrase {
+    font-size: 1em;
+    font-style: italic;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 58px;
+  }
+
+  img {
+    width: auto;
+    height: 5em;
+  }
+
+  nav .mainMenu {
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #38618C;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+}
+
+main {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: block;
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 0 2px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+.summary {
+  display: flex;
+  position: relative;
+}
+
+.weather-summary {
+  font-size: 15px;
+  width: 20%;
+  height: auto;
+  position: absolute;
+  box-shadow: 0 0 0 2px;
+  background-color: #38618C;
+  transform: translate(0%, -55%);
+  overflow: hidden; 
+  margin-left: 10px;;
+  margin-top: 105px;
+}
+
+.weather-summary-media {
+  display: none;
+}
+
+#forecast {
+  width: 100%;
+}
+
+#days {
+  background-color: #38618C;
+  text-align: center;
+  font-size: 2em;
+}
+
+#weather-images {
+  text-align: center;
+}
+
+#article img {
+  float: right;
+  padding-top: 17px;
+  padding-left: 1%;
+  width: 30%;
+  height: auto;
+  border-radius: 1.5em;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+#article {
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+#article a{
+  color: black;
+}
+
+#article a:hover {
+  color: darkgrey;
+}
+
+#map-social {
+  display: inline-block;
+  display: flex;
+}
+
+iframe {
+  width: 400;
+  height: 300;
+}
+
+.social-media li {
+  padding-top: 2%;
+  display: inline-block;
+}
+
+.social-media li img {
+  width: 15%;
+  height: auto;
+}
+
+footer a {
+  color: white;
+}
+
+footer {
+  display: flex;
+  background-color: #38618C;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+@media screen and (max-width: 850px) {
+  .top-header {
+    font-size: 2em;
+    margin-top: auto;
+    margin-right: 15px;;
+    margin-bottom: auto;
+    margin-left: 20px;
+  }
+
+  .catch-phrase {
+    font-size: 1em;
+    font-style: italic;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 58px;
+  }
+
+  img {
+    width: auto;
+    height: 5em;
+  }
+
+  nav .mainMenu {
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #38618C;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .weather-summary {
+    display: static;
+  }
+
+  .weather-summary-media {
+    display: block;
+  }
+
+  .map {
+    width: auto;
+    height: 20%;
+  }
+
+  .social-media li img {
+    width: 15%;
+    height: auto;
+  }
+}
