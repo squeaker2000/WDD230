@@ -18,7 +18,7 @@ fetch(requestURL)
         // let events = document.createElement('p');
 
         h2.textContent = towns[i].name;
-        image.setAttribute('src', towns[i].photo);
+        img.src = "./images/soda_springs.jpg"
         motto.textContent = towns[i].motto;
         yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
         population.textContent = 'Population: ' + towns[i].population;
@@ -26,7 +26,6 @@ fetch(requestURL)
         
 
         card.appendChild(h2);
-        card.appendChild(image);
         card.appendChild(motto);
         card.appendChild(yearFounded);
         card.appendChild(population);
