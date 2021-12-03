@@ -10,6 +10,7 @@ fetch(requestURL)
     for (let i = 0; i < towns.length; i++ ) {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
+        let image = document.createElement('img');
         let motto = document.createElement('p');
         let yearFounded = document.createElement('p');
         let population = document.createElement('p');
@@ -17,6 +18,7 @@ fetch(requestURL)
         // let events = document.createElement('p');
 
         h2.textContent = towns[i].name;
+        image.setAttribute('src', towns[i].photo);
         motto.textContent = towns[i].motto;
         yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
         population.textContent = 'Population: ' + towns[i].population;
@@ -24,13 +26,13 @@ fetch(requestURL)
         
 
         card.appendChild(h2);
+        card.appendChild(image);
         card.appendChild(motto);
         card.appendChild(yearFounded);
         card.appendChild(population);
         card.appendChild(avgRain);
         // card.appendChild(events);
 
-        document.querySelector('div.cards').appendChild(card);
-        
+        document.querySelector('div.cards').appendChild(card);        
     }
   });
