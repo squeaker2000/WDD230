@@ -125,14 +125,28 @@ nav .logo-2 {
   }
 }
 
+main {
+  margin: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
 footer a {
   color: white;
 }
 
 footer {
+  position: absolute;
   background-color: #38618c;
   font-size: 22px;
-  bottom: 0;
   width: 100%;
   color: white;
 }

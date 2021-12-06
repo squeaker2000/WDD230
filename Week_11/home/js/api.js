@@ -17,12 +17,33 @@ fetch(requestURL)
         let avgRain = document.createElement('p');
         // let events = document.createElement('p');
 
-        h2.textContent = towns[i].name;
-        image.setAttribute('src', towns[i].photo);
-        motto.textContent = towns[i].motto;
-        yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-        population.textContent = 'Population: ' + towns[i].population;
-        avgRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+        if (i == 0 || i == 2 || i == 6)
+        {
+          h2.textContent = towns[i].name;
+          if (i == 0)
+          {
+            // section.setAttribute('id','card-1')
+            image.src = 'images/soda_springs.jpg';
+          }
+          else if (i == 2)
+          {
+            // section.setAttribute('id','card-2')
+            image.src = 'images/fish_haven.jpg';
+          }
+          else if (i == 6)
+          {
+            // section.setAttribute('id','card-3')
+            image.src = 'images/preston.jpg';
+          }
+          motto.textContent = towns[i].motto;
+          yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+          population.textContent = 'Population: ' + towns[i].population;
+          avgRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+        }
+        else if (i == 1 || i == 3 || i == 4 || i == 5)
+        {
+          ;
+        }
         
 
         card.appendChild(h2);
