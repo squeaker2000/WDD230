@@ -140,7 +140,7 @@ const fillInFiveDayWeatherData = async (temps) => {
   function calculate_wind_chill() {
   
     var t = parseInt(document.getElementById('high').innerHTML)
-    var s = parseInt(document.getElementById('wind-speed').innerHTML)
+    var s = parseInt(document.getElementById('speed').innerHTML)
   
     var wind_chill = null
   
@@ -150,7 +150,7 @@ const fillInFiveDayWeatherData = async (temps) => {
     else { 
         wind_chill = 'N/A'
     }
-    document.getElementById('wind-chill').innerHTML = wind_chill
+    document.getElementById('chill').innerHTML = wind_chill
   }
   
   function makeHTML() {

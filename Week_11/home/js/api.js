@@ -7,7 +7,15 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const towns = jsonObject['towns'];
-    for (let i = 0; i < towns.length; i++) {
+    let filteredTowns = towns;
+    if (towns.length === 7) {
+      filteredTowns = [towns[0], towns[2], towns[6]];
+    }
+
+    for (let i = 0; i < filteredTowns.length; i++) {
+      if (towns.length === 7) {
+        filteredTowns = [towns[0], towns[2], towns[6]];
+      }
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
@@ -17,16 +25,23 @@ fetch(requestURL)
         let avgRain = document.createElement('p');
         // let events = document.createElement('p');
 
-        if (i == 0)
+        h2.textContent = towns[i].name;
+        image.src = 'images/preston.jpg';
+        motto.textContent = towns[i].motto;
+        yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+        population.textContent = 'Population: ' + towns[i].population;
+        avgRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+
+        /* if (i == 0)
         {
-          h2.textContent = towns[i].name;
-          image.src = 'images/soda_springs.jpg';
+        h2.textContent = towns[i].name;
+        image.src = 'images/soda_springs.jpg';
           motto.textContent = towns[i].motto;
           yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
           population.textContent = 'Population: ' + towns[i].population;
           avgRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
         }
-        else if (i == 2)
+        // else if (i == 2)
         {
           h2.textContent = towns[i].name;
           image.src = 'images/fish_haven.jpg';
@@ -35,7 +50,7 @@ fetch(requestURL)
           population.textContent = 'Population: ' + towns[i].population;
           avgRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
         }
-        else if (i == 6)
+        else if (i == 1)
         {
           h2.textContent = towns[i].name;
           image.src = 'images/preston.jpg';
@@ -47,7 +62,7 @@ fetch(requestURL)
         else
         {
           ;
-        }
+        }*/
           // motto.textContent = towns[i].motto;
           //  yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
           // population.textContent = 'Population: ' + towns[i].population;
