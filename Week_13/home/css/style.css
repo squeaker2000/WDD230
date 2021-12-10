@@ -190,7 +190,7 @@ footer {
   position: absolute;
   background: #091540;
   height: auto;
-  width: 100vw;
+  width: 99%;
   padding-top: 40px;
   margin-top: 20px;
   color: #fff;
@@ -223,6 +223,7 @@ footer {
   font-weight: 200;
 }
 
+/* reservation button */
 .button-1 {
   background-color: #157eb7;
   border-radius: 8px;
