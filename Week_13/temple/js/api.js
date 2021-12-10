@@ -1,4 +1,4 @@
-const requestURL = 'https://nathan-byui-api.herokuapp.com/temples/{temple_id}';
+const requestURL = 'https://nathansbradshaw.github.io/temples2.json';
 
 fetch(requestURL)
   .then(function (response) {
