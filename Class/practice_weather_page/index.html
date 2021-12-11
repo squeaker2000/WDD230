@@ -12,6 +12,21 @@
 <body onload="getWeatherData()">
     <h1 id="title">Rexburg Weather</h1>
     <div id="temps">
-    </div> 
+    </div>
+
+    <script>
+        temples = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                    11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+temples.forEach((templeid) => {
+  fetch(`https://nathan-byui-api.herokuapp.com/temples/${templeid}`, {
+    headers: {
+      apiKey:
+        'Ezl0961tEpx2UxTZ5v2uKFK91qdNAr5npRlMT1zLcE3Mg68XwZj3N8Dyp1R8IvFenrVwHRllOUxF0Og00l0m9NcaYMtH6Bpgdv7N',
+    },
+  })
+    .then((response) => response.json())
+    .then((jsObject) => {
+      console.log(jsObject);
+    </script>
 </body>
 </html>

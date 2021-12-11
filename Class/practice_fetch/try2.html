@@ -1,4 +1,104 @@
-temples = [103, 198, 109, 108];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+    <main>
+        <h1>Temples</h1>
+        <div class="cards">
+        </div>
+        <h1>Weather</h1>
+        <div class="idsummary">
+            
+            <h3>Idaho Falls</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Sky</th>
+                    <th>Temperature</th>
+                    <th>Wind Chill</th>
+                    <th>Humidity</th>
+                    <th>Wind Speed</th>
+                </tr>
+                <tr>
+                    <td><span id="yay"></span></td>
+                    <td><span id="temp"></span>°F</td>
+                    <td><span id="yay"><span id="wind"></span>°F</span></td>
+                    <td><span id="yay"><span id="hum"></span>%</span></td>
+                    <td><span id="yay"><span id="ws"></span> mph</span></td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Rexburg</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Sky</th>
+                    <th>Temperature</th>
+                    <th>Wind Chill</th>
+                    <th>Humidity</th>
+                    <th>Wind Speed</th>
+                </tr>
+                <tr>
+                    <td><span id="yay2"></span></td>
+                    <td><span id="temp2"></span>°F</td>
+                    <td><span id="yay2"><span id="wind2"></span>°F</span></td>
+                    <td><span id="yay2"><span id="hum2"></span>%</span></td>
+                    <td><span id="yay2"><span id="ws2"></span> mph</span></td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Kansas City</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Sky</th>
+                    <th>Temperature</th>
+                    <th>Wind Chill</th>
+                    <th>Humidity</th>
+                    <th>Wind Speed</th>
+                </tr>
+                <tr>
+                    <td><span id="yay3"></span></td>
+                    <td><span id="temp3"></span>°F</td>
+                    <td><span id="yay3"><span id="wind3"></span>°F</span></td>
+                    <td><span id="yay3"><span id="hum3"></span>%</span></td>
+                    <td><span id="yay3"><span id="ws3"></span> mph</span></td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Oklahoma City</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Sky</th>
+                    <th>Temperature</th>
+                    <th>Wind Chill</th>
+                    <th>Humidity</th>
+                    <th>Wind Speed</th>
+                </tr>
+                <tr>
+                    <td><span id="yay4"></span></td>
+                    <td><span id="temp4"></span>°F</td>
+                    <td><span id="yay4"><span id="wind4"></span>°F</span></td>
+                    <td><span id="yay4"><span id="hum4"></span>%</span></td>
+                    <td><span id="yay4"><span id="ws4"></span> mph</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <span class= "tb">© Temple Inn and Suites | Alice Duren | Idaho | <a class= "byui" href="https://openweathermap.org/">OpenWeatherMap.org</a></span> <br>
+        <span id="day"></span>, <span id="daynum"></span> <span id="month"></span> <span id="year"></span>
+    </footer>
+    <script>
+        temples = [103, 198, 109, 108];
 temples.forEach((templeid) => {
   fetch(`https://nathan-byui-api.herokuapp.com/temples/${templeid}`, {
     headers: {
@@ -12,28 +112,30 @@ temples.forEach((templeid) => {
 
       let card = document.createElement('section');
       let image = document.createElement('img');
-      let h2 = document.createElement('h2');
-      let h3 = document.createElement('h3');
-      let p = document.createElement('h3');
-      let p2 = document.createElement('h3');
-      let p22 = document.createElement('p');
-      let p3 = document.createElement('p');
-      let p4 = document.createElement('p');
-      let p5 = document.createElement('p');
-      let ptext = document.createElement('h3');
-
       image.setAttribute('src', jsObject.imageurl);
       image.alt = jsObject.city;
+      let h2 = document.createElement('h2');
       h2.textContent = jsObject.name;
+      let h3 = document.createElement('h3');
       h3.textContent = 'Phone: ' + jsObject.phone;
+      let p = document.createElement('h3');
       p.textContent = 'Address: ' + jsObject.address1;
+      let p2 = document.createElement('h3');
       p2.textContent = 'Services: ';
+      let p22 = document.createElement('p');
       p22.textContent = jsObject.services[0];
+      let p3 = document.createElement('p');
       p3.textContent = jsObject.services[1];
+      let p4 = document.createElement('p');
       p4.textContent = jsObject.services[2];
+      let p5 = document.createElement('p');
       p5.textContent = jsObject.services[3];
+      let ptext = document.createElement('h3');
       ptext.textContent = 'Closure Schedule';
-
+      let p55 = document.createElement('h3');
+      p55.textContent = 'History: ';
+      let p6 = document.createElement('p');
+      p6.textContent = jsObject.Summary.facts;
 
       card.appendChild(image);
       card.appendChild(h2);
@@ -44,9 +146,8 @@ temples.forEach((templeid) => {
       card.appendChild(p3);
       card.appendChild(p4);
       card.appendChild(p5);
-      card.appendChild(ptext)
       for (const key of Object.keys(jsObject.closures)) {
-        console.log(jsObject.closures[key]);
+        // console.log(jsObject.closures[key]);
 
         jsObject.closures[key].forEach((closure) => {
           console.log(closure);
@@ -61,6 +162,8 @@ temples.forEach((templeid) => {
           card.appendChild(p7);
         });
       }
+      card.appendChild(p55);
+      card.appendChild(p6);
 
       document.querySelector('div.cards').appendChild(card);
     });
@@ -147,3 +250,7 @@ fetch(apiURL4)
       jsObject.wind.speed
     );
   });
+
+    </script>
+</body>
+</html>
