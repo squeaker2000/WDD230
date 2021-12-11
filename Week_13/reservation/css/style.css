@@ -5,6 +5,10 @@ body {
     font-family: "ABeeZee", sans-serif;
 }
 
+h2 {
+    text-align: center;
+}
+
 /* Nav Bar */
 #container {
     position:relative;
@@ -143,7 +147,7 @@ a {
     font-size: 30px;
 }
 
-#heading-phone {
+#heading-phone #heading-email{
     font-size: 20px;
 }
 

@@ -40,17 +40,17 @@
         <div id="container-2">
             <div id="container-time">
                 <h2 id="heading">Time Open</h2>
-                <h3 id="heading-days">Monday-Friday</h3>
-                <p>7am - 11am (breakfast)</p>
-                <p>11am - 10pm (lunch/dinner)</p>
+                <h3 id="heading-days">Check-In</h3>
+                <p>5am - 12pm</p>
 
-                <h3 id="heading-days">Saturday and Sunday</h3>
-                <p>9am - 1am (breakfast)</p>
-                <p>1am - 10pm (lunch/dinner)</p>
+                <h3 id="heading-days">Dining Room</h3>
+                <p>7am - 10am (breakfast)</p>
+                <p>11am - 10pm (lunch/dinner)</p>
 
                 <hr>
 
                 <h4 id="heading-phone">Call us: (999) 999-9999</h4>
+                <h4 id="heading-email">Email us: suitetempleinn@gmail.com</h4>
             </div>
 
             <div id="container-form">
@@ -62,12 +62,12 @@
                         <input type="text" placeholder="Your Name">
                     </div>
                     <div id="form-field">
-                        <p>Date</p>
+                        <p>Check-In Date</p>
                         <input type="date">
                     </div>
                     <div id="form-field">
-                        <p>Time</p>
-                        <input type="time">
+                        <p>Check-Out Date</p>
+                        <input type="date">
                     </div>
                     <div id="form-field">
                         <P>How many people?</P>
@@ -79,6 +79,33 @@
                             <option value="5">5 persons</option>
                             <option value="5+">5+ persons</option>
                         </select>
+                    </div>
+                    <div id="form-field">
+                        <p>Room Type</p>
+                        <select  name="select" id="#">
+                            <option value="single-twin">Single Twin</option>
+                            <option value="single-queen">Single Queen</option>
+                            <option value="single-king">Single King</option>
+                            <option value="double-twin">Double Twin</option>
+                            <option value="double-queen">Double Queen</option>
+                            <option value="double-king">Double King</option>
+                        </select>
+                    </div>
+                    <div id="form-field">
+                        <p>Email</p>
+                        <input type="email" placeholder="user@email.com">
+                    </div>
+                    <div id="form-field">
+                        <p>Phone</p>
+                        <input type="tel" placeholder="(999) 999-9999">
+                    </div>
+                    <div id="form-field">
+                        <p>State</p>
+                        <input type="text">
+                    </div>
+                    <div id="form-field">
+                        <p>Any Special Accommodations/comments</p>
+                        <textarea placeholder="Comments here"></textarea>
                     </div>
 
                     <input type="submit" id="btn" value="submit">
