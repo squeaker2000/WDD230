@@ -119,14 +119,17 @@ a {
 #main_content {
   margin-left: 20%;
   margin-right: 20%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
 }
 
 /* Temple Content */
 #temple {
-  display: flex;
-  gap: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
-
 #img_container_temple {
   display: inline-block;
   position: relative;
@@ -140,13 +143,18 @@ a {
   width: auto;
   height: 100%;
   margin-left: -50px;
+  grid-row: 1 / 2;
+}
+
+#temple_content{
+  grid-column: 2 / 4;
 }
 
 /* Services Content */
 #services {
-  display: flex;
-  justify-content: right;
-  gap: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 #img_container_services {
@@ -164,10 +172,19 @@ a {
   margin-left: -50px;
 }
 
+#services-img {
+  grid-column: 3 / 4;
+}
+
+#services_content {
+  grid-column: 1 / 3;
+}
+
 /* Reservation Content */
 #reservation {
-  display: flex;
-  gap: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 #img_container_reservation {
@@ -185,6 +202,10 @@ a {
   margin-left: -50px;
 }
 
+#reservation_content {
+  grid-column: 2 / 4;
+}
+
 /* Footer */
 footer {
   position: absolute;
@@ -198,61 +219,80 @@ footer {
 
 #footer_content {
   display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 10px;
-  font-size: 10px;
-  color: #cacdd2;
-}
-
-.footer-bottom p {
-  float: left;
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-.footer-bottom p a {
-  color: #44bae8;
-  font-size: 16px;
-  text-decoration: none;
-}
-.footer-bottom span {
-  text-transform: uppercase;
-  opacity: 0.4;
-  font-weight: 200;
 }
 
 /* reservation button */
-.button-1 {
-  background-color: #157eb7;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "ABeeZee", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+#footer_content a {
+  padding: 1rem 2rem;
+	font-size: 1.25rem;
+	position: relative;
+	border: 2px solid white;
+	color: white;
+	background-color: transparent;
+	text-align: center;
 }
 
-.button-1:hover,
-.button-1:focus {
-  background-color: #44bae8;
+#btn {
+  display:inline-block;
+  position:relative;
+  padding:10px 20px;
+  border:2px solid white;
+  color:white;
+  font-size:30px;
+  text-decoration:none;
+  margin:20px auto;
+  transition: color 0.4s
+}
+
+#btn:after {
+  content:" ";
+  border:2px solid rgba(0,0,0,0);
+  display:inline-block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  transition:all 0.4s;
+}
+
+#btn:hover {
+  color: #157eb7
+}
+
+#btn:hover:after {
+  border:2px solid #157eb7;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+/* Social Media */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 5%;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
