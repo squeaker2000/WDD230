@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="./js/script.js"></script>
+    <title>Suite Temple Inn</title>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <div id="container">
+        <nav>
+            <div id="logo">
+                Company
+            </div>
+            <ul>
+                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/home/home.html">Home</a></li>
+                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/temple/temple.html">Temple</a></li>
+                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="https://squeaker2000.github.io/WDD230/Week_13/services/services.html">Services &nbsp;<i class="fa fa-caret-down"></i></a>
+                    <div class="dd">
+                        <div id="up_arrow"></div>
+                        <ul>
+                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/amenities/amenities.html">Amenities</a></li>
+                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/reception/reception.html">Reception</a></li>
+                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/missionaries/missionaries.html">Missionaries</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Reservation</a></li>
+                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <main id="main_content">
+        <div id="container2">
+            <div id="row">
+                <h1>Contact Us</h1>
+            </div>
+            
+            <div id="row">
+                <h4>We'd love to hear form you!</h4>
+            </div>
+
+            <div id="row input-container">
+                <div id="col-xs-12">
+                    <div id="styled-input wide">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                </div>
+                <div id="col-md-6 col-sm-12">
+                    <div id="styled-input">
+                        <input type="text" placeholder="Email" required>
+                    </div>
+                </div>
+                <div id="col-md-6 col-sm-12">
+                    <div id="styled-input" style="float:right;">
+                        <input type="text" placeholder="Phone Number" required>
+                    </div>
+                </div>
+                <div id="col-xs-12">
+                    <div id="styled-input wide">
+                        <textarea required placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <input type="submit" id="submit-btn" value="submit">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <!-- HTML !-->
+            <button class="button-1" role="button"><a href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Make a Reservation</a></button>
+        </div>
+    </footer>
+</body>
+</html>
