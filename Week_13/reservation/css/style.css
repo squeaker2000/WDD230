@@ -11,38 +11,35 @@ h2 {
 
 /* Nav Bar */
 #container {
-    position:relative;
-    width:100%;
+    position: relative;
+    width: 100%;
     margin: 5% auto;
-    background-color:#091540;
-    box-shadow: -2px -2px 5px white,2px -2px 5px white;
-}
-
-#container > nav {
-    width:100%;
-    display:flex;
-    max-height:60px;
-}
-
-#logo {
-    line-height:60px;
-    font-size:30px;
-    padding: 0 50px;
-    color: white;
-    width:40%;
-    letter-spacing:2px;
-    text-shadow:2px 2px 5px;
-}
-
-#container > nav > ul {
-    margin:0;
-    padding:0;
-    list-style-type:none;
-    display:flex;
-    position:absolute;
-      right:50px;
-/*   min-width:60%; */
-}
+    background-color: #091540;
+    box-shadow: -2px -2px 5px white, 2px -2px 5px white;
+  }
+  
+  #container > nav {
+    width: 100%;
+    display: flex;
+    height: 60px;
+  }
+  
+  #logo img{
+    height: 200px;
+    width: auto;
+    margin-top: -80px;
+    margin-left: 30px;
+  }
+  
+  #container > nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    /*   min-width:60%; */
+  }
 
 #container > nav > ul > li {
     line-height:60px;
@@ -177,7 +174,7 @@ input, select {
     padding: 10px 15px;
 }
 
-#btn {
+#button {
     background-color: rgba(0, 0, 0, .95);
     color: #fff;
     padding: 10px 20px;
@@ -197,11 +194,132 @@ input, select {
     -o-transition: all .3s;
 }
 
-#bth:hover {
+#button:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
     box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+/* Footer */
+#one {
+    position: relative;
+    background: #091540;
+    height: 180px;
+    width: 99%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#two {
+    position: absolute;
+    bottom: 0;
+    background: #091540;
+    height: 180px;
+    width: 99%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+  
+#footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 5% 1fr;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+  
+/* reservation button */
+#footer_content a {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    position: relative;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+}
+  
+#btn {
+    height: 10%;
+    width: 50%;
+    padding:10px 20px;
+    border:2px solid white;
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+    margin: 60px;
+    transition: color 0.4s;
+    grid-row: 2 / 3;
+}
+  
+#btn:after {
+    content:" ";
+    border:2px solid rgba(0,0,0,0);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    transition:all 0.4s;
+}
+  
+#btn:hover {
+    color: #157eb7
+}
+  
+#btn:hover:after {
+    border:2px solid #157eb7;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
+  
+/* Social Media */
+#social-buttons {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 5%;
+    text-decoration: none;
+    border-radius: 50%;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+/* Set a specific color for each brand */
+  
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+#map {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    margin: 10px;
 }
