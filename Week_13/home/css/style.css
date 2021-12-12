@@ -112,6 +112,19 @@ a {
   color: black;
 }
 
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
 /* Main Content */
 #main_content {
   margin-left: 20%;
@@ -392,6 +405,36 @@ footer {
   #main_content {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  nav .mainMenu {
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #38618c;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  nav .openMenu {
+    display: block;
   }
 
   h1 {
