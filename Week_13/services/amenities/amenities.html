@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./js/script.js"></script>
     <title>Suite Temple Inn - Amenities</title>
 </head>
 
@@ -18,21 +17,23 @@
             <div id="logo">
                 <img src="./images/logo.jpg">
             </div>
-            <ul>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/home/home.html">Home</a></li>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/temple/temple.html">Temple</a></li>
-                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="https://squeaker2000.github.io/WDD230/Week_13/services/services.html">Services &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/home/home.html">Home</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/temple/temple.html">Temple</a></li>
+                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/services.html">Services &nbsp;<i class="fa fa-caret-down"></i></a>
                     <div class="dd">
                         <div id="up_arrow"></div>
                         <ul>
-                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/amenities/amenities.html">Amenities</a></li>
-                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/reception/reception.html">Reception</a></li>
-                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/missionaries/missionaries.html">Missionaries</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/amenities/amenities.html">Amenities</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/reception/reception.html">Reception</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/missionaries/missionaries.html">Missionaries</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Reservation</a></li>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/contact/contact.html">Contact</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Reservation</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/contact/contact.html">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
     </div>
@@ -51,7 +52,7 @@
                 <h3>Breakfast</h3>
                 <div>
                     <p>
-                        Content here
+                        We provide a breakfast buffet every morning for our guests.  Our breakfast hours are open from 7am - 10am.
                     </p>
                 </div>
             </div>
@@ -70,7 +71,7 @@
                 <h3>Workout Room</h3>
                 <div>
                     <p>
-                        Content here
+                        No need to worry about breaking your workout routune during your stay.  We have provided a hefty workout room with all the equipment you may need.
                     </p>
                 </div>
             </div>
@@ -89,7 +90,7 @@
                 <h3>Pool</h3>
                 <div>
                     <p>
-                        Content here
+                        Looking for a quiet place to relax?  Our indoor swimming pool is the place for you.  Come take a dip and have a relaxing evening on your night off.
                     </p>
                 </div>
             </div>
@@ -107,7 +108,8 @@
                 <h3>Fast Internet</h3>
                 <div>
                     <p>
-                        Content here
+                        Want to go on vacation, but have a last minute assignment to do?  No need to worry, we have a strong internet connection to help you keep up to date
+                        with all your online needs.
                     </p>
                 </div>
             </div>
@@ -126,7 +128,7 @@
                 <h3>Parking</h3>
                 <div>
                     <p>
-                        Content here
+                        No need to worry abotu paying the prices of a parking garage.  We have ample free parking available at all out hotels.
                     </p>
                 </div>
             </div>
@@ -145,7 +147,8 @@
                 <h3>Temple Shuttle</h3>
                 <div>
                     <p>
-                        Content here
+                        If the weather just isn't looking so great outside, you can still go to the temple.  Just take our shuttle that picks you up right at the 
+                        front enterance of our hotels and goes straight to the nearest temple.
                     </p>
                 </div>
             </div>
@@ -164,7 +167,8 @@
                 <h3>Family Services</h3>
                 <div>
                     <p>
-                        Content here
+                        We also provide a family search center that supports family search and ordinance work.  Come stop by before your trip to the temple to see 
+                        what work you can do.
                     </p>
                 </div>
             </div>
@@ -187,5 +191,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

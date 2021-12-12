@@ -24,10 +24,10 @@ body {
   height: 350%;
   width: auto;
   margin-top: -38%;
-  margin-left: 30px;
+  margin-left: 30px
 }
 
-#container > nav > ul {
+#container > nav > .mainMenu {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -37,7 +37,7 @@ body {
   /*   min-width:60%; */
 }
 
-#container > nav > ul > li {
+#container > nav > .mainMenu > li {
   line-height: 60px;
   margin: 0 0px;
   padding: 0;
@@ -46,22 +46,22 @@ body {
   min-width: 120px;
 }
 
-#container > nav > ul > li > a {
+#container > nav > .mainMenu > li > a {
   position: relative;
   margin: 0 20px;
   color: white;
 }
 
-#container > nav > ul > li:hover {
+#container > nav > .mainMenu > li:hover {
   border-bottom: 2px solid white;
   background-color: #157eb7;
 }
 
-#container > nav > ul > .dropdown:hover {
+#container > nav > .mainMenu > .dropdown:hover {
   border-bottom: none;
 }
 
-#container > nav > ul > .dropdown:hover > .dd {
+#container > nav > .mainMenu > .dropdown:hover > .dd {
   display: block;
 }
 
@@ -73,7 +73,7 @@ a {
   text-decoration: none;
 }
 
-#container > nav > ul > li > div {
+#container > nav > .mainMenu > li > div {
   position: absolute;
   padding: 0 10px;
   background-color: black;
@@ -82,7 +82,7 @@ a {
   min-width: 100px;
 }
 
-#container > nav > ul > li > div > ul {
+#container > nav > .mainMenu > li > div > ul {
   margin: 0px 0 10px 0;
   padding: 0;
   list-style: none;
@@ -103,16 +103,24 @@ a {
   transform: rotate(45deg);
 }
 
-#container > nav > ul > li > div > ul > li:hover {
+#container > nav > .mainMenu > li > div > ul > li:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-#container > nav > ul > li > div > ul > li > a {
+#container > nav > .mainMenu > li > div > ul > li > a {
   padding: 5px;
   color: black;
 }
 
-nav .openMenu {
+.fa-bars {
+  color: #091540;
+}
+
+.fa-times {
+  color: #091540;
+}
+
+/* nav .openMenu {
   font-size: 2rem;
   margin: 20px;
   display: none;
@@ -123,7 +131,7 @@ nav .mainMenu .closeMenu {
   font-size: 2rem;
   display: none;
   cursor: pointer;
-}
+} */
 
 /* Main Content */
 #main_content {
@@ -409,6 +417,11 @@ footer {
 
   #logo {
     display: none;
+  }
+
+  .fa-bars {
+    color: white;
+    margin-top: -50px;
   }
 
   nav .mainMenu {
