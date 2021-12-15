@@ -12,10 +12,10 @@ const fetchCurrentWeatherData = async () => {
 const fillInCurrentWeatherData = async () => {
   
   const data = await fetchCurrentWeatherData();
-  document.getElementById('current-weather').innerHTML = data.weather[0].description
+  document.getElementById('current').innerHTML = data.weather[0].description
   document.getElementById('high').innerHTML = data.main.temp_max
   document.getElementById('humidity').innerHTML = data.main.humidity
-  document.getElementById('wind-speed').innerHTML = data.wind.speed
+  document.getElementById('speed').innerHTML = data.wind.speed
   calculate_wind_chill()
 }
 
@@ -146,7 +146,7 @@ WebFont.load({
 function calculate_wind_chill() {
 
   var t = parseInt(document.getElementById('high').innerHTML)
-  var s = parseInt(document.getElementById('wind-speed').innerHTML)
+  var s = parseInt(document.getElementById('speed').innerHTML)
 
   var wind_chill = null
 
@@ -156,7 +156,7 @@ function calculate_wind_chill() {
   else { 
       wind_chill = 'N/A'
   }
-  document.getElementById('wind-chill').innerHTML = wind_chill
+  document.getElementById('chill').innerHTML = wind_chill
 }
 
 
