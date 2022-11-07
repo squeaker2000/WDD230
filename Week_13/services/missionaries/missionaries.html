@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Suite Temple Inn - Missionaries</title>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <div id="container">
+        <nav>
+            <div id="logo">
+                <img src="./images/logo.jpg">
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/home/home.html">Home</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/temple/temple.html">Temple</a></li>
+                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/services.html">Services &nbsp;<i class="fa fa-caret-down"></i></a>
+                    <div class="dd">
+                        <div id="up_arrow"></div>
+                        <ul>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/amenities/amenities.html">Amenities</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/reception/reception.html">Reception</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/missionaries/missionaries.html">Missionaries</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Reservation</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/contact/contact.html">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="missionaries-content">
+        <!-- Missionaries -->
+        <div id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/twin-double.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Suite One</h3>
+                <div>
+                    <p>
+                        This first suite available for our  missionaries is a double twin bedroom.  This suite is perfect for a typical missionary duo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Missionaries -->
+        <div id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/queen-double.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Suite Two</h3>
+                <div>
+                    <p>
+                        This second suite available is a double queen bedroom.  This suite is a little more roomier than your average double twin bedroom.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <a id="btn" href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Make a Reservation</a>
+
+            <div id="social-buttons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028553!2d-77.09772048438202!3d38.98325594948326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1639255827027!5m2!1sen!2sus"
+                width="300" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="card">
+
+    </div>
+
+    <script>
+        temples = [103, 108, 109, 198]
+        temples.forEach((temple_id) => {
+          fetch(`https://nathan-byui-api.herokuapp.com/temples/${temple_id}`, {
+            headers: {
+              apiKey:
+                'Ezl0961tEpx2UxTZ5v2uKFK91qdNAr5npRlMT1zLcE3Mg68XwZj3N8Dyp1R8IvFenrVwHRllOUxF0Og00l0m9NcaYMtH6Bpgdv7N',
+            },
+          })
+
+            .then((response) => response.json())
+            .then((jsObject) => {
+                console.log(jsObject);
+
+                // let card = document.createElement('section');
+                // let image = document.createElement('img');
+                // let title = document.createElement('h2');
+                // let phone = document.createElement('h3');
+                // let address = document.createElement('h3');
+
+                // let services = document.createElement('h2');
+                // let service1 = document.createElement('p');
+                // let service2 = document.createElement('p');
+                // let service3 = document.createElement('p');
+                // let service4 = document.createElement('p');
+
+                // let closings = document.createElement('h2');
+                // let closings1 = document.createElement('p');
+                // let closings2 = document.createElement('p');
+                // let closings3 = document.createElement('p');
+                // let closings4 = document.createElement('p');
+
+                // image.setAttribute('src', jsObject.imageurl);
+                // title.textContent = jsObject.name;
+                // phone.textContent = jsObject.phone;
+                // address.textContent = jsObject.address1 + location;
+
+                // services.textContent = "Services: ";
+                // service1.textContent = jsObject.services[0];
+                // service2.textContent = jsObject.services[1];
+                // service3.textContent = jsObject.services[2];
+                // service4.textContent = jsObject.services[3];
+
+                // closings.textContent = "Closings: "
+                // closings1.textContent = jsObject.
+
+                // document.getElementById('card');
+
+                // card.appendChild(image);
+                // card.appendChild(title);
+                // card.appendChild(phone);
+                // card.appendChild(address);
+                // card.appendChild(services);
+                // card.appendChild(service1);
+                // card.appendChild(service2);
+                // card.appendChild(service3);
+                // card.appendChild(service4);
+            });
+        });
+    </script>
+</body>
+</html>

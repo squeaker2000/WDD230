@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Suite Temple Inn - Amenities</title>
 </head>
 
@@ -15,26 +15,182 @@
     <div id="container">
         <nav>
             <div id="logo">
-                Company
+                <img src="./images/logo.jpg">
             </div>
-            <ul>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/home/home.html">Home</a></li>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/temple/temple.html">Temple</a></li>
-                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="https://squeaker2000.github.io/WDD230/Week_13/services/services.html">Services &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/home/home.html">Home</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/temple/temple.html">Temple</a></li>
+                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/services.html">Services &nbsp;<i class="fa fa-caret-down"></i></a>
                     <div class="dd">
                         <div id="up_arrow"></div>
                         <ul>
-                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/amenities/amenities.html">Amenities</a></li>
-                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/reception/reception.html">Reception</a></li>
-                            <li><a href="https://squeaker2000.github.io/WDD230/Week_13/services/missionaries/missionaries.html">Missionaries</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/amenities/amenities.html">Amenities</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/reception/reception.html">Reception</a></li>
+                            <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/services/missionaries/missionaries.html">Missionaries</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Reservation</a></li>
-                <li><a href="https://squeaker2000.github.io/WDD230/Week_13/contact/contact.html">Contact</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Reservation</a></li>
+                <li><a id="nav-link" href="https://squeaker2000.github.io/WDD230/Week_13/contact/contact.html">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
     </div>
 
+    <main id="amenities-content">
+        <!-- Breakfast -->
+        <div class="breakfast" id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/breakfast.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Breakfast</h3>
+                <div>
+                    <p>
+                        We provide a breakfast buffet every morning for our guests.  Our breakfast hours are open from 7am - 10am.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workout room -->
+        <div class="workout" id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/workout_room.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Workout Room</h3>
+                <div>
+                    <p>
+                        No need to worry about breaking your workout routune during your stay.  We have provided a hefty workout room with all the equipment you may need.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pool -->
+        <div class="pool" id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/pool.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Pool</h3>
+                <div>
+                    <p>
+                        Looking for a quiet place to relax?  Our indoor swimming pool is the place for you.  Come take a dip and have a relaxing evening on your night off.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fast Internet -->
+        <div class="internet" id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/internet.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Fast Internet</h3>
+                <div>
+                    <p>
+                        Want to go on vacation, but have a last minute assignment to do?  No need to worry, we have a strong internet connection to help you keep up to date
+                        with all your online needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parking -->
+        <div class="parking" id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/parking.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Parking</h3>
+                <div>
+                    <p>
+                        No need to worry abotu paying the prices of a parking garage.  We have ample free parking available at all out hotels.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Temple Shuttle -->
+        <div class="shuttle" id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/shuttle.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Temple Shuttle</h3>
+                <div>
+                    <p>
+                        If the weather just isn't looking so great outside, you can still go to the temple.  Just take our shuttle that picks you up right at the 
+                        front enterance of our hotels and goes straight to the nearest temple.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Family Services -->
+        <div class="family" id="a-box">
+            <div id="img-container">
+                <div id="img-inner">
+                    <div id="inner-skew">
+                        <img src="./images/family.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="text-container">
+                <h3>Family Services</h3>
+                <div>
+                    <p>
+                        We also provide a family search center that supports family search and ordinance work.  Come stop by before your trip to the temple to see 
+                        what work you can do.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <a id="btn" href="https://squeaker2000.github.io/WDD230/Week_13/reservation/reservation.html">Make a Reservation</a>
+
+            <div id="social-buttons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028553!2d-77.09772048438202!3d38.98325594948326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1639255827027!5m2!1sen!2sus"
+                width="300" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
