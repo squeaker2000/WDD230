@@ -182,7 +182,7 @@ nav .mainMenu .closeMenu {
   width: 400px;
   height: 400px;
   overflow: hidden;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 
 #img_container_services img {
