@@ -188,7 +188,7 @@ nav .mainMenu .closeMenu {
 #img_container_services img {
   width: auto;
   height: 100%;
-  margin-left: -50px;
+  margin-left: -50px; /*this might be my problem with the images?*/
 }
 
 #services-img {
